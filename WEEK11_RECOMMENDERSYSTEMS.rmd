@@ -1,0 +1,52 @@
+---
+title: "WEEK11_RECOMMENDERSYSTEMS"
+author: "Joe Rovalino"
+date: "11/8/2019"
+output:
+  word_document: default
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE}
+options(tinytex.verbose = TRUE)
+```
+
+<h1>#Tasks:</h1>
+<h2>1. Analyze an existing recommender system that you find interesting? <br>
+  -Who are your target users?<br>
+  -what are their key goals?<br>
+  -How can you help them in accomplish their goals?</h2>
+<h2>2. Perform a Scenario Design analysis. Consider whether it makes sense for your selected recommender system to perform scenario design twice, once for the organization (e.g. Amazon.com) and once for the organization’s customers.</h2>
+<h2>3. Attempt to reverse engineer what you can about the site, from the site interface and any available information that you can find on the Internet or elsewhere</h3><br>
+<h2>4. Include specific recommendations about how to improve the site's recommendation capabilities going forward. </h2>
+<h2>5. Create your report using an R Markdown file, and create a discussion thread with a link to the GitHub repo where your Markdown file notebook resides.  You are not expected to need to write code for this discussion assignment.</h2><br>
+
+<h3><b>1. Recommender System: </b> <br>
+ Expedia Flight/Hotel/Car/Things To Do recommendations <br>
+-Who are your target users? - The target users are people who are traveling and requiring a variety of targetedr travel purchases. The offer a combination of packages or individual stand alone purchases - Flight and Hotel or Flight/hotel/car or just Car/hotel. Well you get the idea of the various permutations. <br>
+-What are their key goals? - Provide a complete 360 travel experience with multiple ways to get there, accommodate and spend time at the travel location of choice. <br>
+-How can you help them in accomplish their goals? - Offering the customer multiple versions of choices after a decision is chosen so that they can continue to make multiple purchases related to the current trip they are planning. 
+</h3>
+
+<h3><b>2. Scenario Based Analysis: </b>
+Flights - Once an origination and destination is chosen - Expedia recommends a choices by shortest flight, cheapest flight and best choice. The User is also provided a choice to chose flexible dates if required. The place that you start to see more recommendations in after the initial selection of flight. The system pops up screeds to show savings of adding a recommendation of accommodation with a potential price savings. The choice leads to recommendation of "Unreal Deal" hotels that match the flight dates. The system then recommends a choise of adding transportation to and from the travel location. Once this is selected, the system recommends activities to perform while away at the destination. <br><br>Expedia sends recommendations based on collected user data which leads to an overall larger purchase from the customer. If the user leaves prior to purchases and was logged in, the system will send emails about the unpurchased "cart" or trip.  Expedia clustering algorithms used by other Expedia travelers offers up same hotels, transportation and activities based on similar booking patterns.  
+</h3>
+
+<h3><b>3. Attempt to reverse engineer and/or any other information of the site </b>
+
+http://kaushal-desai.us/expedia-recommender-system/
+
+https://towardsdatascience.com/a-machine-learning-approach-building-a-hotel-recommendation-engine-6812bfd53f50
+
+https://www.kaggle.com/c/expedia-hotel-recommendations
+
+</h3>
+
+<h3><b>4. Improvements: </b>
+There is a feature that I really like another app that keeps a list of 'friends' and displays the current selection that the friend made. It would be really cool if you could just chose the same selections as the friend. System could pre-populate the friend's selections  
+</h3>
